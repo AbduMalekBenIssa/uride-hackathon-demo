@@ -1,4 +1,6 @@
-# URide - University Ridesharing Platform
+# URide - University Ridesharing Platform (Hackathon Project)
+
+**Note:** This project was developed as part of a hackathon. The core features like authentication, chat, and ride management currently use **simulated, in-memory data** for demonstration purposes. The integrations described below (Firebase, Google Maps) represent the intended architecture or future development goals.
 
 URide is a modern ridesharing platform designed specifically for university students. It connects drivers and riders within the university community, helps organize community events, and promotes sustainable transportation options.
 
@@ -46,8 +48,8 @@ We welcome contributions to improve URide! Here's how you can help:
 
 - Node.js 16.8 or later
 - npm or yarn
-- Firebase account
-- Google Maps API key
+- ~~Firebase account~~ (Needed for future integration)
+- ~~Google Maps API key~~ (Needed for future integration)
 
 ### Installation
 
@@ -64,12 +66,14 @@ We welcome contributions to improve URide! Here's how you can help:
    yarn install
    ```
 
-3. Set up environment variables:
+3. Set up environment variables (Optional - for future integration):
    ```bash
+   # This step is for setting up Firebase and Google Maps integration in the future.
+   # The current version runs with simulated data without needing a .env.local file.
    # Copy the example environment file
    cp .env.example .env.local
 
-   # Edit the .env.local file with your actual credentials
+   # Edit the .env.local file with your actual credentials when implementing integrations
    ```
 
 4. Run the development server:
@@ -81,9 +85,11 @@ We welcome contributions to improve URide! Here's how you can help:
 
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-## Environment Setup
+## Environment Setup (For Future Integration)
 
-This project uses environment variables to store sensitive information like API keys. Follow these steps to set up your environment:
+**Note:** The following environment variables are **not required** to run the current version of the application, which uses simulated data. This setup is for the planned integration with Firebase and Google Maps.
+
+This project uses environment variables to store sensitive information like API keys. Follow these steps to set up your environment for future development:
 
 1. Copy `.env.example` to `.env.local`
 2. Replace the placeholder values with your actual API keys and configuration
